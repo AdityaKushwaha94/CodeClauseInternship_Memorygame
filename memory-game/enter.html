@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Enter</title>
+    <link rel="stylesheet" href="enter.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Memory Game</h1>
+        <p>Click the button below to start the game!</p>
+        <button id="startButton" class="glow-on-click">Start Game</button>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Memory Game | Made by Aditya Kushwaha</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("startButton").addEventListener("click", function() {
+            this.classList.add('clicked');
+            setTimeout(() => {
+                window.location.href = "index.html"; // Change "index.html" to your actual game page
+            }, 1000); // Adjust the time as needed
+        });
+    </script>
+</body>
+</html>
